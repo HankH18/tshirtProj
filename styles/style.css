@@ -1,0 +1,117 @@
+.bigBox {
+  display:  inline-block;
+  width: 33.33%;
+  padding: 3%;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 0;
+}
+img {
+  max-width: 100%;
+  padding: 5%
+}
+p {
+  font-size: medium;
+}
+.medBox {
+  position: relative;
+  border: 3px solid cornflowerblue
+}
+.botBox {
+  width: 20%;
+  height: square;
+  padding: 2%
+}
+.title {
+  width: 80%;
+  display: inline-block;
+  margin: 0;
+  font-family: sans-serif;
+  color: cornflowerblue;
+}
+.price {
+  width: 20%;
+  display: inline-block;
+  text-align: right;
+  font-family: impact;
+  color: cornflowerblue;
+}
+i {
+  text-align: center;
+}
+.color1 {
+  color: skyblue;
+}
+.color2 {
+  color: palevioletred;
+}
+.color3 {
+  color: burlywood;
+}
+.flip {
+  border-left: 3px solid cornflowerblue;
+  border-bottom: 3px solid cornflowerblue;
+  max-width: 15%;
+  height: 30px;
+  padding: 1% 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  right: 0;
+}
+.compare {
+  border-top: 3px solid cornflowerblue;
+  border-right: 3px solid cornflowerblue;
+}
+.like {
+  border-top: 3px solid cornflowerblue;
+  border-right: 3px solid cornflowerblue;
+}
+.size {
+  border-top: 3px solid cornflowerblue;
+  border-right: 3px solid cornflowerblue;
+}
+.color {
+  border-top: 3px solid cornflowerblue;
+  border-right: 3px solid cornflowerblue;
+}
+.cart {
+  border-top: 3px solid cornflowerblue;
+}
+.flip:hover {
+  color: white;
+  background: cornflowerblue;
+}
+.compare:hover {
+  color: white;
+  background: cornflowerblue;
+}
+.like:hover {
+  color: white;
+  background: cornflowerblue;
+}
+.size:hover {
+  color: white;
+  background: cornflowerblue;
+}
+.color:hover {
+  color: white;
+  background: cornflowerblue;
+}
+.cart:hover {
+  color: white;
+  background: cornflowerblue;
+}
+@media(max-width: 700px) {
+  .bigBox {
+    width: 50%
+  }
+}
+@media(max-width: 450px) {
+  .bigBox {
+    width: 100%;
+  }
+}
