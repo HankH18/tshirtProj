@@ -23,7 +23,6 @@ p {
 .botBox {
   width: 20%;
   height: square;
-  padding: 2%
 }
 .title {
   width: 80%;
@@ -41,6 +40,7 @@ p {
 }
 i {
   text-align: center;
+  padding: 2% 0
 }
 .color1 {
   color: skyblue;
@@ -73,10 +73,12 @@ i {
 .size {
   border-top: 3px solid cornflowerblue;
   border-right: 3px solid cornflowerblue;
+  position: relative;
 }
 .color {
   border-top: 3px solid cornflowerblue;
   border-right: 3px solid cornflowerblue;
+  position: relative;
 }
 .cart {
   border-top: 3px solid cornflowerblue;
@@ -84,34 +86,166 @@ i {
 .flip:hover {
   color: white;
   background: cornflowerblue;
+  cursor: pointer;
 }
 .compare:hover {
   color: white;
   background: cornflowerblue;
+  cursor: pointer;
 }
 .like:hover {
   color: white;
   background: cornflowerblue;
+  cursor: pointer;
 }
 .size:hover {
   color: white;
   background: cornflowerblue;
+  cursor: pointer;
 }
 .color:hover {
   color: white;
   background: cornflowerblue;
+  cursor: pointer;
 }
 .cart:hover {
   color: white;
   background: cornflowerblue;
+  cursor: pointer;
 }
-@media(max-width: 700px) {
+@media(max-width: 800px) {
   .bigBox {
     width: 50%
   }
 }
-@media(max-width: 450px) {
+@media(max-width: 500px) {
   .bigBox {
     width: 100%;
   }
+}
+.sizeBox {
+  position: absolute;
+  height: 130px;
+  padding: 0;
+  background: #FFFFFF;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  border: cornflowerblue solid 3px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s all ease;
+  width: 100%;
+  bottom: 100%;
+}
+.sizeBox:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 5px 5px 0;
+  border-color: #FFFFFF transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  margin-left: -5px;
+  bottom: -5px;
+  left: 50%;
+}
+.sizeBox:before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 7px 7px 0;
+  border-color: #5ca4d7 transparent;
+  display: block;
+  width: 0;
+  z-index: 0;
+  margin-left: -7px;
+  bottom: -10px;
+  left: 50%;
+}
+.colorBox {
+  position: absolute;
+  height: 130px;
+  padding: 8px;
+  background: #FFFFFF;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  border: cornflowerblue solid 3px;
+  width: 100%;
+  bottom: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s all ease;
+}
+.colorBox:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 5px 5px 0;
+  border-color: #FFFFFF transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  margin-left: -5px;
+  bottom: -5px;
+  left: 50%;
+}
+.colorBox:before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 7px 7px 0;
+  border-color: #5ca4d7 transparent;
+  display: block;
+  width: 0;
+  z-index: 0;
+  margin-left: -7px;
+  bottom: -10px;
+  left: 50%;
+}
+.face {
+  color: black;
+  max-width: 100%
+}
+.material-icons.face1 {
+  font-size: 35px;
+}
+.material-icons.face2 {
+  font-size: 30px;
+}
+.material-icons.face3 {
+  font-size: 25px;
+}
+.material_icons.face4 {
+  font-size: 20px;
+}
+.paint1 {
+  color: skyblue;
+}
+.paint2 {
+  color: palevioletred;
+}
+.paint3 {
+  color: burlywood;
+}
+.paint4 {
+  color: purple;
+}
+.face1:hover,.face2:hover,.face3:hover,.face4:hover {
+  opacity: .5;
+  cursor: pointer
+}
+.paint1:hover,.paint2:hover,.paint3:hover,.paint4:hover {
+  opacity: .5;
+  cursor: pointer;
+}
+.size:hover > .sizeBox {
+  opacity: 1;
+  visibility: visible;
+}
+.color:hover > .colorBox {
+  opacity: 1;
+  visibility: visible;
 }
